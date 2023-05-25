@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>
 #include <AFMotor.h>
 
-SoftwareSerial BTSerial(9, 13);
+SoftwareSerial BTSerial(53, 52); //9, 13
 
 //Constants
 const String FORWARD_KEY = "forward";
@@ -12,8 +12,8 @@ const String STOP_Y_KEY = "stopTankY";
 const String STOP_X_KEY = "stopTankX";
 const String MOTOR_SPEED_KEY = "motorSpeed";
 
-const int SENSOR_FRONT_T = 11;
-const int SENSOR_FRONT_E = 10;
+const int SENSOR_FRONT_T = 51; // 11 
+const int SENSOR_FRONT_E = 50; //10
 const int SENSOR_FRONT_MIN = 30;
 
 long t; //timepo que demora en llegar el eco
